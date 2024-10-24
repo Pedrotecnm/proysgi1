@@ -1,0 +1,32 @@
+<!--hacemos una hernecia de la plantilla bas--> 
+{% extends 'base.html' %}
+
+{% block titulo %} 
+    Estas en el l O G I N  principal 
+{% endblock %}
+
+
+<h2 style = "color:greenyellow;"> Estas en estaticos heredado </h2>
+{% endblock %}-->
+
+{% block content %} 
+<h3 style = "color:red;"> LOGIN DEL SISTEMA :())</h3>
+  <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">Correo Electrónico:</label>
+          <input type="email" id="mail" name="user_email" />
+        </li>
+        <li>
+          <label for="msg">Mensaje:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-primary">Guardar</button>
+      <button type="button" class="btn btn-danger">Cancelar</button>
+    </form>
+{% endblock %}
